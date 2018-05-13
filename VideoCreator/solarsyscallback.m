@@ -1,6 +1,6 @@
 function solarsyscallback(SIM_TIME,fig,data,solarsystem,sldt,sldz,speed,toggle,rec,select,txt,vid)
-% Version 2 for use with video writing script create_vid_solar.m
 
+% Version 2 for use with video writing script create_vid_solar.m
 % Function called on changing of user controlled objects to change current
 % plot of solarsystem based on input.
 % Input SIM_TIME = time in days of simulation
@@ -14,6 +14,8 @@ function solarsyscallback(SIM_TIME,fig,data,solarsystem,sldt,sldz,speed,toggle,r
 % Input rec = switch object acting as record button
 % Input select = state of radio button group to select central body 
 % Input txt = texture files for bodies
+
+% ------------------------------------------------------------
     
     t = round(sldt.Value);      % set time as int
     zoom = sldz.Value;          % set zoom angle as float
